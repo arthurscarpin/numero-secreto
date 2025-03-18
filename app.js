@@ -22,7 +22,7 @@ function exibirTextoNaTela(tag, texto) {
 }
 
 function exibirMensagemInicial() {
-    exibirTextoNaTela('h1', 'Jogo do número secreto');
+    exibirTextoNaTela('h1', 'Advinhe o número secreto');
     exibirTextoNaTela('p', `Escolha um número de 1 à ${numeroLimite}`);
 }
 
