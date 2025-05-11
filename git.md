@@ -2,6 +2,16 @@
 
 Esse modelo tem como objetivo documentar comandos do Git afim de estudos.
 
+## Comando: `git log --pretty` ou `git log --format`
+**Descrição:** Visualização do histórico de commits em um formato customizável de acordo com as preferências do usuário.
+
+---
+
+## Comando: `git <comando> --help`
+**Descrição:** Comando de ajuda que abre um manual para execução de cada comando GIT.
+
+---
+
 ## Comando: `git log`
 **Descrição:** Visualização padrão do histórico de commits.
 
@@ -22,23 +32,8 @@ Esse modelo tem como objetivo documentar comandos do Git afim de estudos.
 
 ---
 
-## Comando: `git log --pretty` ou `git log --format`
-**Descrição:** Visualização do histórico de commits em um formato customizável de acordo com as preferências do usuário.
-
----
-
-## Comando: `git <comando> --help`
-**Descrição:** Comando de ajuda que abre um manual para execução de cada comando GIT.
-
----
-
 ## Comando: `git show <HASH>`
 **Descrição:** Visualizar a alteração que o commit especificado pelo HASH fez, se um HASH não for passado será mostrado as alterações do último commit indicado pelo ponteiro HEAD.
-
----
-
-## Comando: `git status`
-**Descrição:** Visualizar qual branch estamos e se há algo para ser adicionado ao Stage Area para seguir com o commit.
 
 ---
 
@@ -52,20 +47,13 @@ Esse modelo tem como objetivo documentar comandos do Git afim de estudos.
 
 ---
 
+## Comando: `git status`
+**Descrição:** Visualizar qual branch estamos e se há algo para ser adicionado ao Stage Area para seguir com o commit.
+
+---
+
 ## Comando: `git branch`
 **Descrição:** Visualiza todas as ramificações (Branches) da minha árvore de trabalho.
-
----
-
-## Comando: `git branch -m <Nome antigo da Branch> <Novo nome da Branch>`
-**Descrição:** Comando para renomear uma branch já existente.
-
----
-
-## Comando: `git branch -d <Branch>`
-**Descrição:** Comando para deletar uma branch específica. 
-
-**Obs:** Não é possível deletar a branch atual no qual o ponteiro HEAD se encontra.
 
 ---
 
@@ -73,6 +61,7 @@ Esse modelo tem como objetivo documentar comandos do Git afim de estudos.
 **Descrição:** Comando para criar uma nova branch. 
 
 **Obs:** Esse comando apenas cria a nova branch mas não muda o ponteiro HEAD para ela.
+
 ---
 
 ## Comando: `git checkout <Branch>` (Antigo) ou `git switch <Branch>` (Novo)
@@ -82,5 +71,46 @@ Esse modelo tem como objetivo documentar comandos do Git afim de estudos.
 
 ## Comando: `git checkout -b <Branch>` (Antigo) ou `git switch - c <Branch>` (Novo)
 **Descrição:** Comando para criar uma Branch e já mover para ela.
+
+---
+
+## Comando: `git merge <Branch>`
+**Descrição:** Comando para mesclar uma branch.
+
+**Obs:** É necessário que o ponteiro HEAD esteja na Branch que deseja efetuar a mescla.
+
+---
+
+## Comando: `git branch -m <Nome antigo da Branch> <Novo nome da Branch>`
+**Descrição:** Comando para renomear uma branch já existente.
+
+---
+
+## Comando: `git branch -d <Branch>`
+**Descrição:** Comando para deletar uma branch específica localmente. 
+
+**Obs:** 
+- Não é possível deletar a branch atual no qual o ponteiro HEAD se encontra.
+- Esse comando deleta a branch do repositório local.
+
+---
+
+## Comando: `git push origin :<Branch>`
+**Descrição:** Comando para deletar uma branch específica remotamente.
+
+**Obs:** 
+- Não é possível deletar a branch atual no qual o ponteiro HEAD se encontra.
+- Esse comando deleta a branch do repositório remoto.
+
+---
+
+## Comando: `git rebase <Branch>`
+**Descrição:** Reescreve a história, o comando vai pegar todos os commits de uma ramificação e colocá-los em sequência na branch especificada.
+
+**Obs:** Os commits movidos terão um Hash diferente.
+
+**Exemplo:**
+
+![git rebase](img/git/git-reabase.png)
 
 ---
