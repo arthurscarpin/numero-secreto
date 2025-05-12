@@ -167,3 +167,44 @@ Esse modelo tem como objetivo documentar comandos do Git afim de estudos.
 **Descrição:** Remove o item especificado da pilha de stashes, sem aplicá-la.
 
 ---
+
+## Comando: `git checkout --.` (Antigo) ou `git restore .` (Novo)
+**Descrição:** Restaura todos os arquivos no diretório de trabalho que não foram adicionados à stage nem commitados, revertendo suas modificações e deixando-os de volta ao estado do último commit.
+
+**Obs:** 
+- Esse comando é equivalente a um "Ctrl + Z" para as alterações que ainda não foram stageadas ou commitadas.
+- Use com cuidado, pois as mudanças não podem ser recuperadas após a execução, caso não tenham sido salvas de outra forma.
+- Por padrão o restore é para a HEAD (Último commit)
+
+---
+
+## Comando: `git restore <nome do arquivo>`
+**Descrição:** Restaura o arquivo especificado no diretório de trabalho que não foram adicionados à stage nem commitados, revertendo suas modificações e deixando-os de volta ao estado do último commit.
+
+**Obs:**
+- Esse comando é equivalente a um "Ctrl + Z" para as alterações que ainda não foram stageadas ou commitadas.
+- Usado quando você deseja desfazer as alterações em apenas um arquivo, sem afetar o restante do diretório de trabalho.
+- Por padrão o restore é para a HEAD (Último commit)
+
+---
+
+## Comando: `git restore --staged .`
+**Descrição:** Desfaz o git add de todos os arquivos que foram adicionados à área de stage, removendo-os da preparação para o commit, mas mantendo as alterações feitas nos arquivos no diretório de trabalho.
+
+**Obs:** Desfaz o processo de preparação para o commit, mas as modificações no arquivo ainda permanecem.
+
+---
+
+## Comando: `git restore --staged <nome do arquivo>`
+**Descrição:** Desfaz o git add de um arquivo específico, removendo-o da área de stage, mas mantendo as alterações feitas no arquivo no diretório de trabalho. 
+
+**Obs:** Desfaz o processo de preparação para o commit, mas as modificações no arquivo ainda permanecem.
+
+---
+
+## Comando: `git restore --source <hash> <nome do arquivo>`
+**Descrição:** Restaura um arquivo específico para o estado em que ele estava em um commit específico, identificado pela <hash> do commit.
+
+**Obs:** O arquivo será revertido para a versão registrada naquele commit, sem afetar outros arquivos no diretório de trabalho.
+
+---
