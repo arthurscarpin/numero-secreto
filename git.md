@@ -118,3 +118,42 @@ Esse modelo tem como objetivo documentar comandos do Git afim de estudos.
 ![git rebase](img/git/git-reabase.png)
 
 ---
+
+## Comando: `git stash`
+**Descrição:** Salva temporariamente as alterações não commitadas em uma área de armazenamento separada chamada "gaveta", permitindo que você volte a um estado limpo do repositório sem perder o progresso atual.
+
+**Obs:** 
+- Útil quando você precisa mudar de branch ou pausar o trabalho atual sem fazer um commit incompleto.
+
+---
+
+## Comando: `git stash push -m "<Mensagem>"`
+**Descrição:** Cria uma stash descritiva, passando uma mensagem.
+
+**Obs:** 
+- Útil quando você precisa mudar de branch ou pausar o trabalho atual sem fazer um commit incompleto.
+
+---
+
+## Comando: `git stash pop`
+**Descrição:** Recupera a última alteração salva no stash e remove essa entrada da pilha de stashes.
+
+**Obs:** 
+- O stash funciona como uma pilha, então este comando aplica e remove a stash mais recente.
+
+---
+
+## Comando: `git stash apply {indice da stash}`
+**Descrição:** Aplica uma stash específica da pilha, identificada pelo seu índice, sem removê-la do stash.
+
+---
+
+## Comando: `git stash list`
+**Descrição:** Exibe a lista de todas as alterações salvas no stash, em ordem cronológica reversa (da mais recente para a mais antiga).
+
+---
+
+## Comando: `git stash clear`
+**Descrição:** Remove todas as entradas do stash, limpando completamente a pilha de alterações salvas.
+
+---
