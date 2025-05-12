@@ -157,3 +157,13 @@ Esse modelo tem como objetivo documentar comandos do Git afim de estudos.
 **Descrição:** Remove todas as entradas do stash, limpando completamente a pilha de alterações salvas.
 
 ---
+
+## Comando: `git stash drop`
+**Descrição:** Remove o último item da pilha de stashes, sem aplicá-la.
+
+---
+
+## Comando: `git stash drop {indice}`
+**Descrição:** Remove o item especificado da pilha de stashes, sem aplicá-la.
+
+---
