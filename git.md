@@ -74,13 +74,6 @@ Esse modelo tem como objetivo documentar comandos do Git afim de estudos.
 
 ---
 
-## Comando: `git merge <Branch>`
-**Descrição:** Comando para mesclar uma branch.
-
-**Obs:** É necessário que o ponteiro HEAD esteja na Branch que deseja efetuar a mescla.
-
----
-
 ## Comando: `git branch -m <Nome antigo da Branch> <Novo nome da Branch>`
 **Descrição:** Comando para renomear uma branch já existente.
 
@@ -104,10 +97,21 @@ Esse modelo tem como objetivo documentar comandos do Git afim de estudos.
 
 ---
 
+## Comando: `git merge <Branch>`
+**Descrição:** Comando para mesclar uma branch.
+
+**Obs:** 
+- É necessário que o ponteiro HEAD esteja na Branch que deseja efetuar a mescla.
+- O mege junta os trabalhos de duas branches, podendo gerar um merge commit.
+
+---
+
 ## Comando: `git rebase <Branch>`
 **Descrição:** Reescreve a história, o comando vai pegar todos os commits de uma ramificação e colocá-los em sequência na branch especificada.
 
-**Obs:** Os commits movidos terão um Hash diferente.
+**Obs:** 
+- Aplica os commits de outra branch na branch atual.
+- Os commits movidos terão um Hash diferente.
 
 **Exemplo:**
 
