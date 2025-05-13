@@ -2,6 +2,16 @@
 
 Esse modelo tem como objetivo documentar comandos do Git afim de estudos.
 
+## Comando: `git log`
+**Descrição:** Visualização padrão do histórico de commits.
+
+---
+
+## Comando: `git log <nome da branch>`
+**Descrição:** Visualização padrão do histórico de commits de uma branch específica.
+
+---
+
 ## Comando: `git log --pretty` ou `git log --format`
 **Descrição:** Visualização do histórico de commits em um formato customizável de acordo com as preferências do usuário.
 
@@ -9,11 +19,6 @@ Esse modelo tem como objetivo documentar comandos do Git afim de estudos.
 
 ## Comando: `git <comando> --help`
 **Descrição:** Comando de ajuda que abre um manual para execução de cada comando GIT.
-
----
-
-## Comando: `git log`
-**Descrição:** Visualização padrão do histórico de commits.
 
 ---
 
@@ -254,5 +259,14 @@ Esse modelo tem como objetivo documentar comandos do Git afim de estudos.
 **Descrição:** Verifica e exibe os detalhes de uma annotated tag, incluindo sua assinatura GPG (caso a tag tenha sido assinada), autor, data e mensagem.
 
 **Obs:** Esse recurso só funciona para annotated tags, tags normal não possuem esse recurso.
+
+---
+
+## Comando: `git cherry-pick <hash>`
+**Descrição:** Aplica um commit específico de outra branch na branch atual, preservando as alterações daquele commit como um novo commit na linha do tempo atual.
+
+**Obs:**
+- Muito útil quando você quer aplicar apenas um ou alguns commits selecionados de outra branch, sem fazer merge completo.
+- Pode causar conflitos se o commit aplicado tiver mudanças que colidam com o estado atual da branch.
 
 ---
