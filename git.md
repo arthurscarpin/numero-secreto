@@ -256,3 +256,4 @@ Esse modelo tem como objetivo documentar comandos do Git afim de estudos.
 **Obs:** Esse recurso só funciona para annotated tags, tags normal não possuem esse recurso.
 
 ---
+
