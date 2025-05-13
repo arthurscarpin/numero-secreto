@@ -208,3 +208,51 @@ Esse modelo tem como objetivo documentar comandos do Git afim de estudos.
 **Obs:** O arquivo será revertido para a versão registrada naquele commit, sem afetar outros arquivos no diretório de trabalho.
 
 ---
+
+## Comando: `git tag <nome da tag>`
+**Descrição:** Cria uma tag para o commit atual (HEAD), marcando esse ponto específico no histórico do repositório.
+
+**Obs:**
+- Tags são comumente usadas para marcar versões de lançamento (ex: v1.0.0).
+- A tag é apenas um marcador — não armazena metadados como autor ou mensagem.
+
+---
+
+## Comando: `git tag <nome da tag> <hash>`
+**Descrição:** Cria uma tag para o commit um commit específico.
+
+**Obs:**
+- Tags são comumente usadas para marcar versões de lançamento (ex: v1.0.0).
+- A tag é apenas um marcador — não armazena metadados como autor ou mensagem.
+
+---
+
+## Comando: `git tag`
+**Descrição:** Comando para listar todas as tags.
+
+---
+
+
+## Comando: `git push origin <nome da tag>`
+**Descrição:** Enviar tag especifica para o repositório remoto.
+
+---
+
+## Comando: `git push origin --tags`
+**Descrição:** Enviar todas as tags para o repositório remoto.
+
+---
+
+## Comando: `git tag -a <nome da tag> -m "<Mensagem>"` ou `git tag <nome da tag> -m "<Mensagem>"`
+**Descrição:** Cria uma tag anotada (annotated tag) para o commit atual (HEAD), incluindo uma mensagem descritiva. Essa tag é armazenada como um objeto completo no Git, contendo informações como autor, data e comentário.
+
+**Obs:** Ideal para marcar versões de lançamento ou pontos importantes no histórico, pois mantém metadados e contexto.
+
+---
+
+## Comando: `git tag -v <nome da tag>`
+**Descrição:** Verifica e exibe os detalhes de uma annotated tag, incluindo sua assinatura GPG (caso a tag tenha sido assinada), autor, data e mensagem.
+
+**Obs:** Esse recurso só funciona para annotated tags, tags normal não possuem esse recurso.
+
+---
