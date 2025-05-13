@@ -257,3 +257,15 @@ Esse modelo tem como objetivo documentar comandos do Git afim de estudos.
 
 ---
 
+## Comando: `git cherry-pick <hash>`
+**Descrição:** Aplica um commit específico de outra branch na branch atual, preservando as alterações daquele commit como um novo commit na linha do tempo atual.
+
+**Obs:**
+- Muito útil quando você quer aplicar apenas um ou alguns commits selecionados de outra branch, sem fazer merge completo.
+- Pode causar conflitos se o commit aplicado tiver mudanças que colidam com o estado atual da branch.
+
+---
+## Comando: `git blame <nome do arquivo>`
+**Descrição:** Mostra linha por linha do arquivo, indicando qual autor realizou a última modificação em cada uma e em qual commit.
+
+---
