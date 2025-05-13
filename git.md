@@ -270,3 +270,7 @@ Esse modelo tem como objetivo documentar comandos do Git afim de estudos.
 - Pode causar conflitos se o commit aplicado tiver mudanças que colidam com o estado atual da branch.
 
 ---
+## Comando: `git blame <nome do arquivo>`
+**Descrição:** Mostra linha por linha do arquivo, indicando qual autor realizou a última modificação em cada uma e em qual commit.
+
+---
